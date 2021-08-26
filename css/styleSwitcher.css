@@ -1,0 +1,67 @@
+.style-switcher {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #d4d4e3;
+    border-right: none;
+    border-radius: 0 0 0 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.style-switcher.open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.style-switcher h5 {
+    font-size: 16px;
+    color: #302e4d;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e8dfec;
+}
+
+.style-switcher ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.style-switcher ul li {
+    display: inline-block;
+}
+
+.style-switcher ul li a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.style-switcher .toggle-style-switcher {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    left: -45px;
+    top: -1px;
+    border: 1px solid #d4d4e3;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    opacity: 0.3;
+}
+
+.style-switcher .toggle-style-switcher .fa {
+    font-size: 24px;
+    line-height: 42px;
+    z-index: -1;
+}
